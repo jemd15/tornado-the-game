@@ -1,1 +1,50 @@
-<p>account works!</p>
+<div class="grid">
+  <div class="row">
+    <div class="col to-top">
+      <img src="https://loremflickr.com/1440/240/landscape" />
+      <img class="avatar" src="https://loremflickr.com/240/240/profesor" />
+    </div>
+  </div>
+  <div class="row flex">
+    <div class="col">
+      <h1>{{privateQuizzes}}</h1>
+      <span>privateQuizzes</span>
+    </div>
+    <div class="col">
+      <h1>{{publicQuizzes}}</h1>
+      <span>publicQuizzes</span>
+    </div>
+    <div class="col">
+      <h1>{{totalQuizzes}}</h1>
+      <span>totalQuizzes</span>
+    </div>
+  </div>
+  <div class="row margin-top">
+    <div class="col">
+      <h2>Quizzes</h2>
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    
+    @for (quiz of quizzes; track quiz.id) {
+      <div class="col" style="width: 24%;">
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>Shiba Inu</mat-card-title>
+            <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <p>This card indeterminates progress bar.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo delectus obcaecati</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    } @empty {
+      Empty list of users
+    }
+  </div>
+</div>

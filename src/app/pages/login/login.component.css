@@ -1,0 +1,10 @@
+.svg-icon {
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  filter: invert(30%) sepia(74%) saturate(736%) hue-rotate(197deg) brightness(94%) contrast(96%);
+}
+
+mat-card {
+  width: 400px;
+}

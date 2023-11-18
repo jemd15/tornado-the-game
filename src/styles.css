@@ -4,9 +4,8 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .center {
-  display: flex;
   justify-content: center; /* align horizontal */
-  align-items: center; /* align vertical */
+  align-self: center;
 }
 
 .full-width {
@@ -26,24 +25,63 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .grid {
   display: flex;
-  flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente fila si no hay suficiente espacio */
-  justify-content: space-around; /* Distribuye el espacio sobrante alrededor de los elementos */
-  align-items: stretch; /* Ajusta la altura de los elementos para que ocupen el contenedor */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .col {
   display: flex;
-  flex-direction: column; /* Alinea los elementos en columnas en lugar de filas */
-  justify-content: space-around; /* Distribuye el espacio sobrante alrededor de los elementos en la columna */
-  align-items: center; /* Centra horizontalmente los elementos en la columna */
-  padding: 8px 16px;
-  flex-grow: 1; /* Permite que los elementos se expandan equitativamente */
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .row {
   display: flex;
-  flex-wrap: nowrap; /* Evita que los elementos se envuelvan en la fila */
-  justify-content: space-around; /* Distribuye el espacio sobrante alrededor de los elementos */
-  align-items: center; /* Centra verticalmente los elementos en la fila */
+  flex-direction: row;
+  align-items: center;
   width: 100%;
+  min-height: 60px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 16px;
+}
+
+.row.flex {
+  .col {
+    flex: 1;
+  }
+}
+
+
+.padding-top {
+  padding-top: 16px;
+}
+
+.padding-bottom {
+  padding-bottom: 16px;
+}
+
+.margin-top {
+  margin-top: 16px;
+}
+
+.margin-bottom {
+  margin-bottom: 16px;
+}
+
+.to-top {
+  align-self: flex-start;
+}
+
+.to-bottom {
+  align-self: flex-end;
+}
+
+img.avatar {
+  border-radius: 50%;
+  margin-top: -140px;
+  border: 4px solid white;
 }
