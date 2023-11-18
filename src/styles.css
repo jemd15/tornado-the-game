@@ -2,3 +2,48 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.center {
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+}
+
+.full-width {
+  width: 100%;
+}
+
+.start {
+  float: left;
+  align-self: start;
+}
+
+.end {
+  float: right;
+  align-self: end;
+}
+
+
+.grid {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente fila si no hay suficiente espacio */
+  justify-content: space-around; /* Distribuye el espacio sobrante alrededor de los elementos */
+  align-items: stretch; /* Ajusta la altura de los elementos para que ocupen el contenedor */
+}
+
+.col {
+  display: flex;
+  flex-direction: column; /* Alinea los elementos en columnas en lugar de filas */
+  justify-content: space-around; /* Distribuye el espacio sobrante alrededor de los elementos en la columna */
+  align-items: center; /* Centra horizontalmente los elementos en la columna */
+  padding: 8px 16px;
+  flex-grow: 1; /* Permite que los elementos se expandan equitativamente */
+}
+
+.row {
+  display: flex;
+  flex-wrap: nowrap; /* Evita que los elementos se envuelvan en la fila */
+  justify-content: space-around; /* Distribuye el espacio sobrante alrededor de los elementos */
+  align-items: center; /* Centra verticalmente los elementos en la fila */
+  width: 100%;
+}

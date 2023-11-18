@@ -12,4 +12,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 })
 export class FooterComponent {
 
+  public year: number = new Date().getUTCFullYear()
+
 }

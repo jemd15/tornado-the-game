@@ -1,1 +1,59 @@
-<p>login works!</p>
+<app-navbar></app-navbar>
+
+<mat-grid-list cols="1" rowHeight="70vh">
+  <mat-grid-tile>
+    <mat-card class="example-card" style="width:400px;">
+      <mat-card-header class="center">
+        <mat-card-title>
+          <h2><span color="accent">Login</span></h2>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="grid">
+          <div class="row">
+            <div class="col">
+              <form [formGroup]="loginForm" (ngSubmit)="login()">
+                <mat-form-field class="full-width">
+                  <mat-label>Email</mat-label>
+                  <input type="email" matInput formControlName="email" placeholder="Ex. pat@example.com">
+                </mat-form-field>
+                <mat-form-field class="full-width">
+                  <mat-label>Password</mat-label>
+                  <input type="password" matInput formControlName="password" placeholder="Your password">
+                </mat-form-field>
+                <button mat-button routerLink="/sign-in" color="accent" class="end">Forgot <b>Password</b>?</button>
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button mat-flat-button color="primary" class="full-width"><strong>LOGIN</strong></button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <span>or login with</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button mat-fab color="dark" aria-label="Example icon button with a bookmark icon">
+                <mat-icon color="primary">facebook</mat-icon>
+              </button>
+            </div>
+            <div class="col">
+              <button mat-fab color="dark" aria-label="Example icon button with a bookmark icon">
+                <mat-icon color="primary">twitter</mat-icon>
+              </button>
+            </div>
+            <div class="col">
+              <button mat-fab color="dark" aria-label="Example icon button with a bookmark icon">
+                <mat-icon color="primary">logo-google</mat-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

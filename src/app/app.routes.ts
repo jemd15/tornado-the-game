@@ -11,7 +11,7 @@ export const routes: Routes = [
   { path: 'home', component: HomeComponent, pathMatch: 'full' },
   { path: 'account', component: AccountComponent, pathMatch: 'full' },
   { path: 'login', component: LoginComponent, pathMatch: 'full' },
-  { path: 'signin', component: SigninComponent, pathMatch: 'full' },
+  { path: 'sign-in', component: SigninComponent, pathMatch: 'full' },
   { path: 'new-game', component: NewGameComponent, pathMatch: 'full' },
   { path: 'playing-game', component: PlayingGameComponent, pathMatch: 'full' }
 ];
