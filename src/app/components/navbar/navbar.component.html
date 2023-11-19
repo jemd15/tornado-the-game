@@ -3,14 +3,15 @@
   <span class="flexExpand"></span>
 
   @if (this.api.isLogged()) {
-    <button mat-flat-button color="primary" routerLink="/sign-up">Your Quizzes</button>
-    <button mat-flat-button color="primary" routerLink="/login">New Quiz</button>
+    <button mat-flat-button color="primary" routerLink="/account">Your Quizzes</button>
+    <button mat-flat-button color="primary" routerLink="/new-game">New Quiz</button>
+    <img src="https://loremflickr.com/50/50/selfie,man" alt="user photo" class="avatar">
   }@else {
     <button mat-flat-button color="primary" routerLink="/sign-up">Sign Up</button>
     <button mat-flat-button color="primary" routerLink="/login">Login</button>
+    <button mat-icon-button aria-label="account icon">
+      <mat-icon aria-hidden="false" fontIcon="account_circle"></mat-icon>
+    </button>
   }
 
-  <button mat-icon-button aria-label="account icon">
-    <mat-icon aria-hidden="false" fontIcon="account_circle"></mat-icon>
-  </button>
 </mat-toolbar>
