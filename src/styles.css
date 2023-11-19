@@ -68,3 +68,8 @@ img.avatar {
 .shadow {
   box-shadow: var(--mdc-elevated-card-container-elevation);
 }
+
+.mat-success {
+  background-color: green !important;
+  color: #fff !important;
+}

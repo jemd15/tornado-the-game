@@ -1,4 +1,4 @@
-<mat-card>
+<mat-card [ngClass]="{ 'played': played }" (click)="setPlayed(true)">
   <div class="row middle-md">
     <div class="col-md">
       <img class="card-logo margin-top" src="../../../assets/imgs/tornado-logo-2.svg" alt="the tornado the game logo">

@@ -15,7 +15,7 @@
           <!-- <h1>This is a question example title</h1> -->
           <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod deleniti accusamus maxime nostrum molestiae dicta</h1>
         </div>
-        <div class="col-md-12 vh-30">
+        <div class="col-md-12 vh-20">
           <button mat-flat-button color="primary" class="timer">
             @if (isComplete) {
               <b class="time">TIME!</b>
@@ -25,16 +25,21 @@
           </button>
         </div>
       </div>
+      <div class="row center-md around vh-10">
+        <div class="col-md">
+          <button mat-flat-button color="warn">wrong</button>
+        </div>
+        <div class="col-md">
+          <button mat-flat-button color="success">correct</button>
+        </div>
+      </div>
       <div class="row center-md">
-        <div class="col-md-4">
-          <b>Team 1</b>
-        </div>
-        <div class="col-md-4">
-          <b>Team 2</b>
-        </div>
-        <div class="col-md-4">
-          <b>Team 3</b>
-        </div>
+        @for (team of teams; track $index) {
+          <div class="col-md-4">
+            <b>{{team.name}}</b> <br>
+            <b>Points: {{team.points}}</b>
+          </div>
+        }
       </div>
     </div>
   </div>

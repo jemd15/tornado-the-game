@@ -1,7 +1,11 @@
 mat-card {
   aspect-ratio: 1/1.1;
-  background-color: dimgray;
+  background-color: deepskyblue;
   border: solid white 10px;
+}
+
+mat-card.played {
+  background-color: dimgray;
 }
 
 .card-logo {

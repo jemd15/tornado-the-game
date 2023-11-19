@@ -11,4 +11,10 @@ import { MatCardModule } from "@angular/material/card";
 })
 export class QuestionCardComponent {
 
+  public played: boolean = false
+
+  public setPlayed(state: boolean) {
+    this.played = state
+  }
+
 }
