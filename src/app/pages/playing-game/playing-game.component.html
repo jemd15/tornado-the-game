@@ -1,1 +1,31 @@
-<p>playing-game works!</p>
+<div class="container margin-top">
+  <div class="row margin-top">
+    <div class="col-md-8">
+      <div class="row center-md around">
+        @for (card of cards; track $index) {
+          <div class="col-md-2 margin-bottom">
+            <app-question-card></app-question-card>
+          </div>
+        }
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="row center-md">
+        <div class="col-md-12 vh-70">
+          <h1>This is a question example title</h1>
+        </div>
+      </div>
+      <div class="row center-md">
+        <div class="col-md-4">
+          <b>Team 1</b>
+        </div>
+        <div class="col-md-4">
+          <b>Team 2</b>
+        </div>
+        <div class="col-md-4">
+          <b>Team 3</b>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

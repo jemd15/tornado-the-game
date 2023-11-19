@@ -1,0 +1,13 @@
+mat-card {
+  aspect-ratio: 1/1.1;
+  background-color: dimgray;
+  border: solid white 10px;
+}
+
+.card-logo {
+  width: 80%;
+}
+
+.row {
+  height: -webkit-fill-available;
+}
