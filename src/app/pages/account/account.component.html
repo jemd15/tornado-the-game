@@ -1,33 +1,33 @@
-<div class="grid">
-  <div class="row">
-    <div class="col to-top">
+<div class="container">
+  <div class="row center-md">
+    <div class="col-md">
       <img src="https://loremflickr.com/1440/240/landscape" />
-      <img class="avatar" src="https://loremflickr.com/240/240/profesor" />
+      <img class="avatar shadow" src="https://loremflickr.com/240/240/profesor" />
     </div>
   </div>
-  <div class="row flex">
-    <div class="col">
+  <div class="row around-md center-md top-md vh-20">
+    <div class="col-md">
       <h1>{{privateQuizzes}}</h1>
       <span>privateQuizzes</span>
     </div>
-    <div class="col">
+    <div class="col-md">
       <h1>{{publicQuizzes}}</h1>
       <span>publicQuizzes</span>
     </div>
-    <div class="col">
+    <div class="col-md">
       <h1>{{totalQuizzes}}</h1>
       <span>totalQuizzes</span>
     </div>
   </div>
-  <div class="row margin-top">
-    <div class="col">
-      <h2>Quizzes</h2>
+  <div class="row">
+    <div class="col-md">
+      <h2>Your Quizzes</h2>
     </div>
   </div>
-  <div class="row margin-bottom">
+  <div class="row">
     
     @for (quiz of quizzes; track quiz.id) {
-      <div class="col" style="width: 24%;">
+      <div class="col-md-3 margin-bottom">
         <mat-card>
           <mat-card-header>
             <mat-card-title>Shiba Inu</mat-card-title>

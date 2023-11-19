@@ -1,57 +1,69 @@
-<div class="grid">
-  <div class="row flex">
-    <div class="col">
-      <mat-card>
-        <mat-card-header class="center">
-          <mat-card-title>
+<div class="container">
+  <div class="row center-md middle-md vh-70">
+    <div class="col-md-4">
+      <mat-card class="margin-top margin-bottom">
+        <div class="row center-md">
+          <div class="col-md">
             <h2>Login</h2>
-          </mat-card-title>
-        </mat-card-header>
-  
-        <mat-card-content>
-          <form [formGroup]="loginForm" (ngSubmit)="login()">
-            <div class="row">
-              <div class="col">
-                <mat-form-field class="full-width">
-                  <mat-label>Email</mat-label>
-                  <input type="email" matInput formControlName="email" placeholder="Ex. pat@example.com">
-                </mat-form-field>
-                <mat-form-field class="full-width">
-                  <mat-label>Password</mat-label>
-                  <input type="password" matInput formControlName="password" placeholder="Your password">
-                </mat-form-field>
-                <a mat-button color="accent" class="end">Forgot <b>Password</b>?</a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <button mat-flat-button color="primary" class="full-width"><strong>LOGIN</strong></button>
-              </div>
-            </div>
-          </form>
-          <div class="row">
-            <div class="col">
-              <span>or login with</span>
-            </div>
           </div>
-          <div class="row">
-            <div class="col">
-              <button mat-fab color="dark" aria-label="Example icon button with a bookmark icon">
-                <img src="../../../assets/icons/facebook.svg" class="svg-icon">
-              </button>
-            </div>
-            <div class="col">
-              <button mat-fab color="dark" aria-label="Example icon button with a bookmark icon">
-                <img src="../../../assets/icons/x.svg" class="svg-icon">
-              </button>
-            </div>
-            <div class="col">
-              <button mat-fab color="dark" aria-label="Example icon button with a bookmark icon">
-                <img src="../../../assets/icons/google.svg" class="svg-icon">
-              </button>
-            </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-md">
+            <mat-card-content>
+              <form [formGroup]="loginForm" (ngSubmit)="login()">
+                <div class="row">
+                  <div class="col-md">
+                    <mat-form-field class="full-width">
+                      <mat-label>Email</mat-label>
+                      <input type="email" matInput formControlName="email" placeholder="Ex. pat@example.com">
+                    </mat-form-field>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md">
+                    <mat-form-field class="full-width">
+                      <mat-label>Password</mat-label>
+                      <input type="password" matInput formControlName="password" placeholder="Your password">
+                    </mat-form-field>
+                  </div>
+                </div>
+                <div class="row end-md margin-bottom">
+                  <div class="col-md">
+                    <a mat-button color="accent">Forgot <b>Password</b>?</a>
+                  </div>
+                </div>
+                <div class="row margin-bottom">
+                  <div class="col-md">
+                    <button mat-flat-button color="primary" class="full-width"><strong>LOGIN</strong></button>
+                  </div>
+                </div>
+              </form>
+              <div class="row margin-bottom">
+                <div class="col-md">
+                  <span>or login with</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md">
+                  <button mat-fab color="dark" aria-label="Example icon button with a bookmark icon">
+                    <img src="../../../assets/icons/facebook.svg" class="svg-icon">
+                  </button>
+                </div>
+                <div class="col-md">
+                  <button mat-fab color="dark" aria-label="Example icon button with a bookmark icon">
+                    <img src="../../../assets/icons/x.svg" class="svg-icon">
+                  </button>
+                </div>
+                <div class="col-md">
+                  <button mat-fab color="dark" aria-label="Example icon button with a bookmark icon">
+                    <img src="../../../assets/icons/google.svg" class="svg-icon">
+                  </button>
+                </div>
+              </div>
+            </mat-card-content>
           </div>
-        </mat-card-content>
+        </div>
       </mat-card>
     </div>
   </div>
