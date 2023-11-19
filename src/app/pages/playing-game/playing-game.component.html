@@ -9,10 +9,20 @@
         }
       </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 question-col">
       <div class="row center-md">
-        <div class="col-md-12 vh-70">
-          <h1>This is a question example title</h1>
+        <div class="col-md-12 vh-40">
+          <!-- <h1>This is a question example title</h1> -->
+          <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod deleniti accusamus maxime nostrum molestiae dicta</h1>
+        </div>
+        <div class="col-md-12 vh-30">
+          <button mat-flat-button color="primary" class="timer">
+            @if (isComplete) {
+              <b class="time">TIME!</b>
+            }@else {
+              <cd-timer [countdown]="true" maxTimeUnit="minute" [startTime]="10" format="ms" (onComplete)="setComplete(true)"></cd-timer>
+            }
+          </button>
         </div>
       </div>
       <div class="row center-md">

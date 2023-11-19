@@ -1,0 +1,13 @@
+.timer {
+  width: 160px;
+  height: 100px;
+}
+
+cd-timer, .time {
+  zoom: 3;
+}
+
+.question-col {
+  position: fixed;
+  right: 2%;
+}
