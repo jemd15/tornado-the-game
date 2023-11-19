@@ -2,13 +2,13 @@
   <img routerLink="/home" class="nav-logo" src="../../../assets/imgs/tornado-logo-2.svg" alt="logo of tornado the game">
   <span class="flexExpand"></span>
 
-  <!-- @if (this.auth.logged) {
+  @if (this.api.isLogged()) {
     <button mat-flat-button color="primary" routerLink="/sign-up">Your Quizzes</button>
     <button mat-flat-button color="primary" routerLink="/login">New Quiz</button>
   }@else {
     <button mat-flat-button color="primary" routerLink="/sign-up">Sign Up</button>
     <button mat-flat-button color="primary" routerLink="/login">Login</button>
-  } -->
+  }
 
   <button mat-icon-button aria-label="account icon">
     <mat-icon aria-hidden="false" fontIcon="account_circle"></mat-icon>
